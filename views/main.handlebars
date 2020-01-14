@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>GitHub API Scrapper</title>
+    <meta name="description" content="Github API app with Nodejs Server.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <center><h1>Github API Data Scrapper</h1></center>
+    </header>
+
+    <div class="container">
+
+      {{#if session}}
+      <p>
+        <a href="/logoff" class="btn btn-danger" role="button">Logout</a>
+      </p>
+      
+      {{else}}
+      <a href="/auth/github" class="btn btn-info" role="button">Log-in with GitHub</a>
+      {{/if}}
+
+
+      {{#if repos}}
+      <h2><u>{{session.user.name}}'s Repositories</u></h2>
+      <ul class="collapsible">
+        {{#each repos}}
+        <li><a href="https://github.com/{{full_name}}" target="_blank">{{full_name}}</a> -- owned by <a href="https://github.com/{{owner.login}}">{{owner.login}}</a></li>
+        {{/each}}
+      </ul>
+
+      <center><b>Created by <a href="https://github.com/Stanyke" target="_blank">Stanyke</a>, source code: <a href="https://github.com/Stanyke/GithubScrapper" target="_blank">GithubScrapper's Repository</a>.</b></center>
+      {{/if}}
+
+    </div>
+
+  </body>
+
+</html>
