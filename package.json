@@ -1,0 +1,35 @@
+{
+  "name": "githubscrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanyke/GithubScrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanyke/GithubScrapper/issues"
+  },
+  "homepage": "https://github.com/Stanyke/GithubScrapper#readme",
+  "dependencies": {
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "flatted": "^2.0.1",
+    "github-api": "^3.3.0",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "underscore": "^1.9.2"
+  }
+}
