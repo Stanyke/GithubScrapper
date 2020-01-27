@@ -13,7 +13,7 @@ This app was built to help scrap user's Github repositories ones logged in.
 
 2. Goto your Github Account's setting fllowing the clicks, **Settings  => Developer settings => OAuth Apps => New OAuth App** give the app a name, also Homepage URL should be *http://localhost:3000/* and Authorization callback URL should be *http://localhost:3000/login/github/return*... These are the basic things you need, then save the OAuth App to get your **Client ID & Client Secret**.
 
-3.http://localhost:3000/login/github/return is the url i'll be pointing to in my NodeJS to check the login authentication.
+3. http://localhost:3000/login/github/return is the url i'll be pointing to in my NodeJS to check the login authentication.
 
 4. Now, the **Client ID & Client Secret** we have gotten is needed to replace a few places in the **.env** file in the root directory.
 The **Client ID** should replace *YOUR_GITHUB_CLIENT_ID_NUMBER* and **Client Secret** should replace *YOUR_GITHUB_CLIENT_SECRET_NUMBER* (just replace with the numbers gotten after registering the New OAuth App), Finally save.
