@@ -30,6 +30,6 @@
     "nodemon": "^2.0.2",
     "passport": "^0.4.1",
     "passport-github": "^1.1.0",
-    "underscore": "^1.9.2"
+    "underscore": "^1.12.1"
   }
 }
